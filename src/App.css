@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.app {
+  height: 100vh;
+  background-color: #fff;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__alert > a {
+  text-decoration: underline;
+  color: rgb(221, 221, 221);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__alert {
+  background-color: #111;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px 10px;
+}
+
+.app__content {
+  display: flex;
+  justify-content: center;
+}
+
+.app__image {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1612374033431-fb18d8fe7652?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 675px;
+}
+
+.app__image > h1 {
+  position: absolute;
+  font-size: 7rem;
+  width: 100px;
+  line-height: 1;
   color: white;
+  bottom: 10rem;
+  left: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.app__image > button {
+  border: none;
+  position: absolute;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  bottom: 7rem;
+  left: 6rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition-timing-function: ease-in;
+  transition: background-color 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__image > button:hover {
+  background-color: rgba(116, 116, 116, 0.8);
+  color: lightgray;
+}
+
+.app__cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 0;
+}
+
+.app__body > h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.app__body {
+  padding: 5rem;
+}
+
+.app__liveAnywhere {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__liveAnywhereContainer > img {
+  width: 21vw;
+  border-radius: 1rem;
+}
+
+.app__experienceWorld {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  padding: 2rem 5rem;
+}
+
+.app__experienceWorld > p {
+  margin-bottom: 2rem;
+}
+
+.app__experienceWorldFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__experienceWorldContainer > img {
+  width: 29vw;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+.app__experienceWorldContainer > p {
+  width: 18vw;
+  border-radius: 1rem;
+}
+
+.joinHosts {
+  display: flex;
+  justify-content: space-between;
+}
+.joinHostsContainer > img {
+  width: 30vw;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+.joinHostsWrapper {
+  padding: 2rem 4rem;
+}
+
+.joinHostsWrapper > h1 {
+  margin-bottom: 1rem;
+}
+
+.joinHostsContainer > p {
+  font-size: 1.2rem;
 }

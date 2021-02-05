@@ -1,0 +1,33 @@
+.searchBox {
+  background-color: white;
+  width: 800px;
+  border-radius: 3rem;
+  padding: 0.5rem 2rem;
+}
+
+.searchBox__section > h4 {
+  color: rgb(19, 19, 19);
+  font-size: 0.9rem;
+}
+
+.searchBox__section > p {
+  color: rgb(114, 114, 114);
+}
+
+.searchBox__sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBox__section {
+  border-right: 1px solid lightgray;
+  padding-right: 2rem;
+}
+
+.searchBox__sections > .MuiSvgIcon-root {
+  color: white;
+  background-color: #e8215a;
+  padding: 0.7rem;
+  border-radius: 100%;
+}

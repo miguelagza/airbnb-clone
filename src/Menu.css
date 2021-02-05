@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.menu__title {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.menu__title:hover {
+  border-bottom: 1px solid white;
+}
+
+.menu__title--active {
+  border-bottom: 1px solid white;
+}
